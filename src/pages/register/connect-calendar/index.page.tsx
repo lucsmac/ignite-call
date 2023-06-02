@@ -10,6 +10,8 @@ export default function Register() {
   const session = useSession()
   const router = useRouter()
 
+  console.log(session)
+
   const isSignedIn = session.status === 'authenticated'
   const hasAuthError = !!router.query.error
 
